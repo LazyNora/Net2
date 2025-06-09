@@ -29,15 +29,43 @@ namespace Server
       dataGridView.AutoGenerateColumns = false;
       dataGridView.AllowUserToAddRows = false;
       dataGridView.ReadOnly = true;
-      dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-      // Add columns
-      dataGridView.Columns.Add("MaKH", "Mã KH");
-      dataGridView.Columns.Add("TenKH", "Tên khách hàng");
-      dataGridView.Columns.Add("TenTK", "Tên tài khoản");
-      dataGridView.Columns.Add("Email", "Email");
-      dataGridView.Columns.Add("TrangThaiKH", "Trạng thái");
-      dataGridView.Columns.Add("SoDu", "Số dư");
+      dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;      // Add columns
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "MaKH",
+        HeaderText = "Mã KH",
+        DataPropertyName = "MaKH"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TenKH",
+        HeaderText = "Tên khách hàng",
+        DataPropertyName = "TenKH"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TenTK",
+        HeaderText = "Tên tài khoản",
+        DataPropertyName = "TenTK"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "Email",
+        HeaderText = "Email",
+        DataPropertyName = "Email"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TrangThaiKH",
+        HeaderText = "Trạng thái",
+        DataPropertyName = "TrangThaiKH"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "SoDu",
+        HeaderText = "Số dư",
+        DataPropertyName = "SoDu"
+      });
 
       // Setup context menu
       var contextMenu = new ContextMenuStrip();

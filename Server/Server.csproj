@@ -121,6 +121,21 @@
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyHoaDon.resx">
+      <DependentUpon>Form_QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyMay.resx">
+      <DependentUpon>Form_QuanLyMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyNhanVien.resx">
+      <DependentUpon>Form_QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLySanPham.resx">
+      <DependentUpon>Form_QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyTaiKhoan.resx">
+      <DependentUpon>Form_QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_TopUp.resx">
       <DependentUpon>Form_TopUp.cs</DependentUpon>
     </EmbeddedResource>

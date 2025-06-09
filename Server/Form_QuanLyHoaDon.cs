@@ -26,15 +26,43 @@ namespace Server
       dataGridView.AutoGenerateColumns = false;
       dataGridView.AllowUserToAddRows = false;
       dataGridView.ReadOnly = true;
-      dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-      // Add columns
-      dataGridView.Columns.Add("MaHD", "Mã HĐ");
-      dataGridView.Columns.Add("NgayLap", "Ngày lập");
-      dataGridView.Columns.Add("TenKH", "Khách hàng");
-      dataGridView.Columns.Add("TenNV", "Nhân viên");
-      dataGridView.Columns.Add("TongTien", "Tổng tiền");
-      dataGridView.Columns.Add("TrangThai", "Trạng thái");
+      dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;      // Add columns
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "MaHD",
+        HeaderText = "Mã HĐ",
+        DataPropertyName = "MaHD"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "NgayLap",
+        HeaderText = "Ngày lập",
+        DataPropertyName = "NgayLap"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TenKH",
+        HeaderText = "Khách hàng",
+        DataPropertyName = "TenKH"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TenNV",
+        HeaderText = "Nhân viên",
+        DataPropertyName = "TenNV"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TongTien",
+        HeaderText = "Tổng tiền",
+        DataPropertyName = "TongTien"
+      });
+      dataGridView.Columns.Add(new DataGridViewTextBoxColumn
+      {
+        Name = "TrangThai",
+        HeaderText = "Trạng thái",
+        DataPropertyName = "TrangThai"
+      });
 
       // Setup context menu
       var contextMenu = new ContextMenuStrip();
