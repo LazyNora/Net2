@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB078421-1B01-4D84-AEC3-1287C9B280C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LogIn.Designer.cs">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyHoaDon.Designer.cs">
+      <DependentUpon>Form_QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyMay.Designer.cs">
+      <DependentUpon>Form_QuanLyMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyNhanVien.Designer.cs">
+      <DependentUpon>Form_QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLySanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLySanPham.Designer.cs">
+      <DependentUpon>Form_QuanLySanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>Form_QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThanhToan.Designer.cs">
+      <DependentUpon>Form_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home.Designer.cs">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TopUp.Designer.cs">
+      <DependentUpon>Form_TopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ComputerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\CurrentUser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_LogIn.resx">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home.resx">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TopUp.resx">
+      <DependentUpon>Form_TopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ComputerDetail.resx">
+      <DependentUpon>Form_ComputerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThanhToan.resx">
+      <DependentUpon>Form_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQl_Database\SQL_Database.csproj">
+      <Project>{e04173f6-984e-4e39-9df1-309d5721155a}</Project>
+      <Name>SQL_Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
